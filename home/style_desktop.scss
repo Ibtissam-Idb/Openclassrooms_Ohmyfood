@@ -1,0 +1,169 @@
+$primary : #9356DC;
+$secondary : #FF79DA;
+$tertiary : #99E2D0;
+$tint-light : #f7f7f7;
+$tint-middle : #eaeaea;
+$tint-dark: #4c4b4b;
+$shadow-btn : #cdcccc;
+
+
+body {
+    font-size : 20px;
+}
+
+.header {
+    justify-content: start;
+    z-index: 0;
+    box-shadow: none;
+    padding: 20px;
+}
+
+.header_img {
+    width: 200px;
+}
+
+.localisation {
+    background: #fff;
+    position: absolute;
+    right: 20px;
+    top: 30px;
+    padding: 0px;
+}
+
+.localisation_icon {
+    top: 0px;
+    right: 10px;
+}
+
+.heading {
+    background: #fff;
+    padding-left: 70px;
+    align-items: flex-start;
+    text-align: start;
+}
+
+.title.heading_title {
+    font-size : 70px;
+    line-height: 72px;
+    margin-bottom: 0px;
+    padding: 0px;
+    width: 840px;
+}
+
+.heading_subtitle {
+    width: 650px;
+}
+
+.btn {
+        &--light-background {
+            background: #fff;
+        }
+        &--gradient {
+            margin-right: 0px;
+            margin-left: 0px;
+            font-size: 20px;
+            padding: 10px 20px;
+        }
+}
+
+/* Boutons Fonctionnement */
+
+.functionning {
+    background-color: $tint-light;
+}
+
+.title--desktop {
+    font-size: 50px;
+    font-weight: 300;
+}
+
+.functionning_buttons_bloc {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.functionning_buttons_element {
+    font-size: 20px;
+    width: 33%;
+    padding: 21px 0px;
+    position: relative;
+}
+
+.functionning_buttons_container {
+    column-gap: 28px;
+    padding-left: 0;
+    margin-left: 47px;
+    align-items: center;
+}
+
+.functionnong_button_number {
+    padding: 3px 8px;
+    font-size: 14px;
+    width: 7%;
+    left: 10px;
+}
+
+.functionning_button_icon {
+    top: 0px;
+}
+
+/* Restaurants */
+
+.restaurants {
+    padding: 40px 40px 150px 40px;
+    background: $tint-light;
+    margin: 0px;
+}
+
+.restaurants_bloc {
+    margin-top: 40px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 41px;
+    justify-content: space-around;
+}
+
+.restaurants_element {
+    display: flex;
+    width: 46%;
+    height: 150px;
+}
+
+.restaurant_img {
+    width: 28%;
+    max-width: 129px;
+    object-position: 40%;
+    height: 100%;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 0px;
+}
+
+.restaurant_figcaption {
+    width: 100%;
+    align-items: center;
+    box-shadow: none;
+    border-top-right-radius: 30px;
+}
+
+.restaurants h2 {
+    font-size: 28px;
+}
+
+.restaurants h3 {
+    font-size: 24px;
+}
+
+/* Footer */
+
+.footer {
+    padding: 40px;
+}
+
+.footer_img {
+    width: 190px;
+}
+
+.footer_list_icon {
+    font-size: 17px;
+}

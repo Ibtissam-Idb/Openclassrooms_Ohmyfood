@@ -1,0 +1,23 @@
+
+
+.heading {
+    padding-left: 90px;
+    text-align: start;
+    align-items: flex-start;
+}
+
+.title.heading_title {
+    margin-bottom: 0px;
+    width: 490px;
+    padding: 0px;
+}
+
+.heading_subtitle {
+    width: 650px;
+}
+
+.btn {
+        &--gradient {
+            margin: 0px;
+        }
+}
