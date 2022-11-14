@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Shrikhand&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+}
+.flex-column {
+  flex-direction: column;
+}
+
+body {
+  font-size: 33px;
+  width: 100%;
+  margin: 0;
+  font-family: Roboto, sans-serif;
+}
+
+.header {
+  justify-content: center;
+  padding: 45px 0px 20px 0px;
+  z-index: 1000;
+}
+
+.header_img {
+  width: 350px;
+}
+
+.header_icon {
+  position: absolute;
+  font-size: 56px;
+  left: 28px;
+}
+
+/* Restaurant */
+.restaurant_img {
+  width: 100%;
+}
+
+.restaurant_description {
+  border: 2px solid;
+  position: relative;
+  bottom: 102px;
+  padding: 30px;
+  background: #f7f7f7;
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+}
+
+.restaurant_title_bloc h1 {
+  margin: 0px;
+  font-family: Shrikhand;
+  font-size: 55px;
+  padding-top: 15px;
+}
+
+.menu_type {
+  margin-top: 60px;
+}
+
+.menu_subtitle {
+  margin-bottom: 0px;
+  font-size: 34px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.menu_colored_bar {
+  width: 85px;
+  height: 6px;
+  background: #99E2D0;
+  margin-top: 5px;
+}
+
+/* Cartes de restaurant */
+.menu_cards_bloc {
+  margin-top: 30px;
+  row-gap: 30px;
+}
+
+.menu_card {
+  background: #fff;
+  border-radius: 30px;
+  box-shadow: 0px 5px 20px #cdcccc;
+}
+
+.cards_description_text--no_margin {
+  margin: 0px;
+}
+
+.menu_cards_description {
+  justify-content: space-between;
+  width: 100%;
+}
+
+.menu_cards_subtitle {
+  font-weight: 300;
+}
+
+.cards_description_price {
+  align-items: flex-end;
+  font-weight: 500;
+  font-size: 30px;
+}
+
+.menu_cards_description--width {
+  padding: 30px 20px;
+}
+
+/* Animation des cartes au hover */
+.menu_cards_animation {
+  width: 0%;
+  display: flex;
+  background: #99E2D0;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  border-bottom-right-radius: 30px;
+  border-top-right-radius: 30px;
+  transition: all 500ms;
+}
+
+.cards_animation_icon {
+  font-size: 60px;
+  color: #fff;
+  transition: all 500ms;
+}
+
+.menu_cards_description:hover .menu_cards_animation {
+  width: 20%;
+}
+.menu_cards_description:hover .cards_animation_icon {
+  transform: rotate(360deg);
+}/*# sourceMappingURL=style.css.map */
