@@ -49,7 +49,6 @@ body {
 }
 
 .restaurant_description {
-    border: 2px solid;
     position: relative;
     bottom: 102px;
     padding: 30px;
@@ -103,6 +102,8 @@ body {
 .menu_cards_description {
     justify-content: space-between;
     width: 100%;
+    max-height: 146px;
+    overflow: hidden;
 }
 
 .menu_cards_subtitle {
@@ -139,6 +140,10 @@ body {
     transition: all 500ms;
 }
 
+.not_enough_space {
+    display: none;
+}
+
 .menu_cards_description:hover {
         & .menu_cards_animation {
             width: 20%
@@ -146,4 +151,38 @@ body {
         & .cards_animation_icon {
             transform: rotate(360deg);
         }
+        & .not_enough_space {
+            display: block;
+        }
+        & .enough_space {
+            display: none;
+        }
+}
+
+/* Footer */
+
+.footer {
+    background: $tint-dark;
+    color: #fff;
+    padding: 60px 40px;
+}
+
+.footer_img {
+    filter: invert(1);
+    width: 256px;
+}
+
+.footer_list {
+    list-style: none;
+    padding: 0px;
+}
+
+.footer_list_item {
+    list-style: none;
+    padding: 0px;
+    margin-bottom: 15px
+}
+
+.footer_list_icon {
+    font-size: 25px;
 }
