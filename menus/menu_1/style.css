@@ -16,15 +16,39 @@ body {
   margin: 0;
   font-family: Roboto, sans-serif;
 }
+@media (min-width: 992px) {
+  body {
+    font-size: 20px;
+    background: url("../../maquettes/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+    background-size: cover;
+    background-position: 30%;
+  }
+}
 
 .header {
   justify-content: center;
   padding: 45px 0px 20px 0px;
   z-index: 1000;
 }
+@media (min-width: 992px) {
+  .header {
+    justify-content: start;
+    z-index: 0;
+    box-shadow: none;
+    padding: 20px;
+  }
+}
 
 .header_img {
   width: 350px;
+}
+@media (min-width: 992px) {
+  .header_img {
+    width: 200px;
+    position: relative;
+    left: 50px;
+    filter: invert(1);
+  }
 }
 
 .header_icon {
@@ -32,10 +56,30 @@ body {
   font-size: 56px;
   left: 28px;
 }
+@media (min-width: 992px) {
+  .header_icon {
+    font-size: 30px;
+    position: relative;
+    top: 2px;
+    color: #fff;
+  }
+}
 
 /* Restaurant */
+@media (min-width: 992px) {
+  .restaurant {
+    display: flex;
+    justify-content: center;
+  }
+}
+
 .restaurant_img {
   width: 100%;
+}
+@media (min-width: 992px) {
+  .restaurant_img {
+    display: none;
+  }
 }
 
 .restaurant_description {
@@ -46,12 +90,27 @@ body {
   border-top-right-radius: 50px;
   border-top-left-radius: 50px;
 }
+@media (min-width: 992px) {
+  .restaurant_description {
+    border-radius: 50px;
+    width: 75%;
+    margin: 50px 0px;
+    background: rgba(247, 247, 247, 0.5);
+    position: static;
+  }
+}
 
 .restaurant_title_bloc h1 {
   margin: 0px;
   font-family: Shrikhand;
   font-size: 55px;
   padding-top: 15px;
+}
+@media (min-width: 992px) {
+  .restaurant_title_bloc h1 {
+    padding-top: 0px;
+    font-size: 40px;
+  }
 }
 
 .menu_type {
@@ -63,6 +122,11 @@ body {
   font-size: 34px;
   font-weight: 300;
   text-transform: uppercase;
+}
+@media (min-width: 992px) {
+  .menu_subtitle {
+    font-size: 25px;
+  }
 }
 
 .menu_colored_bar {
@@ -104,6 +168,11 @@ body {
   font-weight: 500;
   font-size: 30px;
 }
+@media (min-width: 992px) {
+  .cards_description_price {
+    font-size: 18px;
+  }
+}
 
 .menu_cards_description--width {
   padding: 30px 20px;
@@ -127,6 +196,11 @@ body {
   color: #fff;
   transition: all 500ms;
 }
+@media (min-width: 992px) {
+  .cards_animation_icon {
+    font-size: 40px;
+  }
+}
 
 .not_enough_space {
   display: none;
@@ -144,6 +218,17 @@ body {
 .menu_cards_description:hover .enough_space {
   display: none;
 }
+@media (min-width: 992px) {
+  .menu_cards_description:hover .menu_cards_animation {
+    width: 15%;
+  }
+  .menu_cards_description:hover .not_enough_space {
+    display: none;
+  }
+  .menu_cards_description:hover .enough_space {
+    display: block;
+  }
+}
 
 /* Footer */
 .footer {
@@ -151,10 +236,20 @@ body {
   color: #fff;
   padding: 60px 40px;
 }
+@media (min-width: 992px) {
+  .footer {
+    padding: 40px;
+  }
+}
 
 .footer_img {
   filter: invert(1);
   width: 256px;
+}
+@media (min-width: 992px) {
+  .footer_img {
+    width: 190px;
+  }
 }
 
 .footer_list {
@@ -170,4 +265,9 @@ body {
 
 .footer_list_icon {
   font-size: 25px;
+}
+@media (min-width: 992px) {
+  .footer_list_icon {
+    font-size: 17px;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -24,28 +24,67 @@ body {
     width: 100%;
     margin: 0;
     font-family: Roboto, sans-serif;
+
+    @media (min-width: 992px) {
+        font-size : 20px;
+    background: url("../../maquettes/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+    background-size: cover;
+    background-position: 30%;
+    }
 }
 
 .header {
     justify-content: center;
     padding: 45px 0px 20px 0px;
     z-index: 1000;
+
+    @media (min-width: 992px) {
+        justify-content: start;
+    z-index: 0;
+    box-shadow: none;
+    padding: 20px;
+    }
 }
 
 .header_img {
     width: 350px;
+
+    @media (min-width: 992px) {
+        width: 200px;
+        position: relative;
+        left: 50px;
+        filter: invert(1)
+    }
 }
 
 .header_icon {
     position: absolute;
     font-size: 56px;
     left: 28px;
+
+    @media (min-width: 992px) {
+        font-size: 30px;
+        position: relative;
+        top: 2px;
+        color : #fff;
+    }
 }
 
 /* Restaurant */
 
+.restaurant {
+    @media (min-width: 992px) {
+        display: flex;
+        justify-content: center;
+    }
+}
+
 .restaurant_img {
     width: 100%;
+
+    @media (min-width: 992px) {
+        display: none;
+    }
 }
 
 .restaurant_description {
@@ -55,6 +94,14 @@ body {
     background: $tint-light;
     border-top-right-radius: 50px;
     border-top-left-radius: 50px;
+
+    @media (min-width: 992px) {
+        border-radius: 50px;
+        width: 75%;
+        margin: 50px 0px;
+        background: rgb(247, 247, 247, 0.5);
+        position: static;
+    }
 }
 
 .restaurant_title_bloc h1 {
@@ -62,6 +109,11 @@ body {
     font-family: Shrikhand;
     font-size: 55px;
     padding-top: 15px;
+
+    @media (min-width: 992px) {
+        padding-top: 0px;
+        font-size: 40px;
+    }
 }
 
 .menu_type {
@@ -73,6 +125,10 @@ body {
     font-size: 34px;
     font-weight: 300;
     text-transform: uppercase;
+
+    @media (min-width: 992px) {
+        font-size: 25px;
+    }
 }
 
 .menu_colored_bar {
@@ -114,6 +170,10 @@ body {
     align-items: flex-end;
     font-weight: 500;
     font-size: 30px;
+
+    @media (min-width: 992px) {
+        font-size: 18px;
+    }
 }
 
 .menu_cards_description--width {
@@ -138,6 +198,10 @@ body {
     font-size: 60px;
     color: #fff;
     transition: all 500ms;
+
+    @media (min-width: 992px) {
+        font-size: 40px;
+    }
 }
 
 .not_enough_space {
@@ -157,6 +221,18 @@ body {
         & .enough_space {
             display: none;
         }
+
+    @media (min-width: 992px) {
+        .menu_cards_animation {
+            width: 15%;
+            }
+            .not_enough_space {
+                display:none;
+            }
+            .enough_space {
+                display:block;
+            }
+    }    
 }
 
 /* Footer */
@@ -165,11 +241,19 @@ body {
     background: $tint-dark;
     color: #fff;
     padding: 60px 40px;
+
+    @media (min-width: 992px) {
+        padding: 40px;
+    }
 }
 
 .footer_img {
     filter: invert(1);
     width: 256px;
+
+    @media (min-width: 992px) {
+        width: 190px;
+    }
 }
 
 .footer_list {
@@ -185,4 +269,8 @@ body {
 
 .footer_list_icon {
     font-size: 25px;
+
+    @media (min-width: 992px) {
+        font-size: 17px;
+    }
 }
