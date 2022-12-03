@@ -23,21 +23,50 @@ body {
   box-shadow: 0px 5px 10px #c7c5c5;
   z-index: 1000;
 }
+@media (min-width: 992px) {
+  .header {
+    justify-content: start;
+    z-index: 0;
+    box-shadow: none;
+    padding: 20px;
+  }
+}
 
 .header_img {
   width: 350px;
 }
+@media (min-width: 992px) {
+  .header_img {
+    width: 200px;
+  }
+}
 
+/* Localisation */
 .localisation {
   justify-content: center;
   background: #eaeaea;
   padding: 30px;
   color: #4c4b4b;
 }
+@media (min-width: 992px) {
+  .localisation {
+    background: #fff;
+    position: absolute;
+    right: 20px;
+    top: 30px;
+    padding: 0px;
+  }
+}
 
 .localisation_icon {
   right: 30px;
   top: 3px;
+}
+@media (min-width: 992px) {
+  .localisation_icon {
+    top: 0px;
+    right: 10px;
+  }
 }
 
 .localisation_text {
@@ -55,6 +84,21 @@ body {
   background: #f7f7f7;
   align-items: center;
 }
+@media (min-width: 768px) and (max-width: 991px) {
+  .heading {
+    padding-left: 90px;
+    text-align: start;
+    align-items: flex-start;
+  }
+}
+@media (min-width: 992px) {
+  .heading {
+    background: #fff;
+    padding-left: 70px;
+    align-items: flex-start;
+    text-align: start;
+  }
+}
 
 .title {
   line-height: 52px;
@@ -66,11 +110,37 @@ body {
   margin-top: 20px;
   width: 70%;
 }
+@media (min-width: 768px) and (max-width: 991px) {
+  .title.heading_title {
+    margin-bottom: 0px;
+    width: 490px;
+    padding: 0px;
+  }
+}
+@media (min-width: 992px) {
+  .title.heading_title {
+    font-size: 70px;
+    line-height: 72px;
+    margin-bottom: 0px;
+    padding: 0px;
+    width: 840px;
+  }
+}
 
 .heading_subtitle {
   font-size: 38px;
   font-weight: 300;
   width: 90%;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .heading_subtitle {
+    width: 650px;
+  }
+}
+@media (min-width: 992px) {
+  .heading_subtitle {
+    width: 650px;
+  }
 }
 
 .btn {
@@ -86,11 +156,29 @@ body {
   font-weight: 600;
   box-shadow: 0px 5px 10px #cdcccc;
 }
+@media (min-width: 768px) and (max-width: 991px) {
+  .btn--gradient {
+    margin: 0px;
+  }
+}
+@media (min-width: 992px) {
+  .btn--gradient {
+    margin-right: 0px;
+    margin-left: 0px;
+    font-size: 20px;
+    padding: 10px 20px;
+  }
+}
 .btn--light-background {
   background-color: #f7f7f7;
   padding: 45px 0px;
   border-radius: 30px;
   box-shadow: 0px 5px 20px #cdcccc;
+}
+@media (min-width: 992px) {
+  .btn--light-background {
+    background: #fff;
+  }
 }
 
 .p-40 {
@@ -101,9 +189,28 @@ body {
   position: relative;
 }
 
+@media (min-width: 992px) {
+  .functionning {
+    background-color: #f7f7f7;
+  }
+  .title--desktop {
+    font-size: 50px;
+    font-weight: 300;
+  }
+  .functionning_button_icon {
+    top: 0px;
+  }
+}
 .functionning_buttons_bloc {
   row-gap: 45px;
   margin-top: 40px;
+}
+@media (min-width: 992px) {
+  .functionning_buttons_bloc {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .functionning_button_icon {
@@ -114,6 +221,14 @@ body {
 .functionning_buttons_element {
   justify-content: center;
   margin: 0px 30px;
+}
+@media (min-width: 992px) {
+  .functionning_buttons_element {
+    font-size: 20px;
+    width: 33%;
+    padding: 21px 0px;
+    position: relative;
+  }
 }
 .functionning_buttons_element :hover .functionning_button_icon {
   color: #9356DC;
@@ -128,6 +243,15 @@ body {
   justify-content: flex-start;
   padding-left: 45px;
 }
+@media (min-width: 992px) {
+  .functionning_buttons_container {
+    -moz-column-gap: 28px;
+         column-gap: 28px;
+    padding-left: 0;
+    margin-left: 47px;
+    align-items: center;
+  }
+}
 
 .functionning_button_number {
   font-size: 27px;
@@ -135,10 +259,15 @@ body {
   background: #9356DC;
   padding: 9px 17px;
   border-radius: 30px;
-}
-
-.functionning_button_number {
   bottom: 2px;
+}
+@media (min-width: 992px) {
+  .functionning_button_number {
+    padding: 3px 8px;
+    font-size: 14px;
+    width: 7%;
+    left: 10px;
+  }
 }
 
 .functionning .no-margin {
@@ -151,6 +280,13 @@ body {
   background: #f7f7f7;
   margin-top: 90px;
 }
+@media (min-width: 992px) {
+  .restaurants {
+    padding: 40px 40px 150px 40px;
+    background: #f7f7f7;
+    margin: 0px;
+  }
+}
 
 .restaurants--shadow {
   box-shadow: 0px 5px 10px #cdcccc;
@@ -159,6 +295,15 @@ body {
 .restaurants_bloc {
   row-gap: 120px;
 }
+@media (min-width: 992px) {
+  .restaurants_bloc {
+    margin-top: 40px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 41px;
+    justify-content: space-around;
+  }
+}
 
 .restaurants_element {
   margin: 0;
@@ -166,6 +311,13 @@ body {
   height: 405px;
   background-color: #fff;
   border-radius: 30px;
+}
+@media (min-width: 992px) {
+  .restaurants_element {
+    display: flex;
+    width: 46%;
+    height: 150px;
+  }
 }
 
 .restaurant_img {
@@ -176,6 +328,17 @@ body {
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
 }
+@media (min-width: 992px) {
+  .restaurant_img {
+    width: 28%;
+    max-width: 129px;
+    -o-object-position: 40%;
+       object-position: 40%;
+    height: 100%;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 0px;
+  }
+}
 
 .restaurant_figcaption {
   justify-content: space-between;
@@ -185,16 +348,34 @@ body {
   border-bottom-right-radius: 30px;
   align-items: center;
 }
+@media (min-width: 992px) {
+  .restaurant_figcaption {
+    width: 100%;
+    align-items: center;
+    box-shadow: none;
+    border-top-right-radius: 30px;
+  }
+}
 
 .restaurants h2 {
   margin: 0;
   font-size: 35px;
+}
+@media (min-width: 992px) {
+  .restaurants h2 {
+    font-size: 28px;
+  }
 }
 
 .restaurants h3 {
   margin: 0;
   font-size: 32px;
   font-weight: 300;
+}
+@media (min-width: 992px) {
+  .restaurants h3 {
+    font-size: 24px;
+  }
 }
 
 /* Footer */
@@ -203,10 +384,20 @@ body {
   color: #fff;
   padding: 60px 40px;
 }
+@media (min-width: 992px) {
+  .footer {
+    padding: 40px;
+  }
+}
 
 .footer_img {
   filter: invert(1);
   width: 256px;
+}
+@media (min-width: 992px) {
+  .footer_img {
+    width: 190px;
+  }
 }
 
 .footer_list {
@@ -222,4 +413,9 @@ body {
 
 .footer_list_icon {
   font-size: 25px;
+}
+@media (min-width: 992px) {
+  .footer_list_icon {
+    font-size: 17px;
+  }
 }/*# sourceMappingURL=style.css.map */
