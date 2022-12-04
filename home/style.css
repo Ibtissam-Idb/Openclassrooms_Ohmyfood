@@ -195,7 +195,7 @@ body {
 
 .functionning_title {
   margin-top: 50px;
-  margin-left: 3%;
+  margin-left: 7%;
 }
 
 @media (min-width: 992px) {
@@ -374,7 +374,7 @@ body {
 }
 @media (min-width: 992px) {
   .restaurants h2 {
-    font-size: 22px;
+    font-size: 19px;
   }
 }
 
@@ -385,7 +385,7 @@ body {
 }
 @media (min-width: 992px) {
   .restaurants h3 {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 
