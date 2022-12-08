@@ -195,6 +195,10 @@ body {
 .functionning_title {
     margin-top: 50px;
     margin-left: 7%;
+
+    @media (min-width: 992px) {
+        margin-left: 40px;
+    }
 }
 
 @media (min-width: 992px) {

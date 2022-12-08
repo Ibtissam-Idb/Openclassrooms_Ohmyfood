@@ -197,6 +197,11 @@ body {
   margin-top: 50px;
   margin-left: 7%;
 }
+@media (min-width: 992px) {
+  .functionning_title {
+    margin-left: 40px;
+  }
+}
 
 @media (min-width: 992px) {
   .functionning {
