@@ -61,7 +61,7 @@ body {
   .header_icon {
     font-size: 30px;
     position: relative;
-    top: 2px;
+    left: 15px;
     color: #fff;
   }
 }
@@ -278,7 +278,7 @@ body {
 }
 @media (min-width: 992px) {
   .footer {
-    padding: 40px;
+    padding: 20px 40px;
   }
 }
 
@@ -296,6 +296,13 @@ body {
 .footer_list {
   list-style: none;
   padding: 0px;
+}
+@media (min-width: 992px) {
+  .footer_list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px;
+  }
 }
 
 .footer_list_item {
