@@ -79,6 +79,7 @@ body {
     @media (min-width: 992px) {
         display: flex;
         justify-content: center;
+        background-color: transparent;
     }
 }
 
@@ -173,11 +174,19 @@ body {
 
 .menu_cards_title {
     font-size: 14px;
+
+    @media (min-width: 992px) {
+        font-size: 18px;
+    }
 }
 
 .menu_cards_subtitle {
     font-weight: 300;
     font-size: 12px;
+
+    @media (min-width: 992px) {
+        font-size: 16px;
+    }
 }
 
 .cards_description_price {
@@ -186,7 +195,7 @@ body {
     font-size: 13px;
 
     @media (min-width: 992px) {
-        font-size: 18px;
+        font-size: 12px;
     }
 }
 
@@ -205,16 +214,16 @@ body {
     align-items: center;
     border-bottom-right-radius: 8px;
     border-top-right-radius: 8px;
-    transition: all 500ms;
+    transition: all 600ms;
 }
 
 .cards_animation_icon {
     font-size: 20px;
     color: #fff;
-    transition: all 500ms;
+    transition: all 600ms;
 
     @media (min-width: 992px) {
-        font-size: 40px;
+        font-size: 30px;
     }
 }
 
@@ -238,7 +247,8 @@ body {
 
     @media (min-width: 992px) {
         .menu_cards_animation {
-            width: 15%;
+            width: 12%;
+            max-width: 70px;
             }
             .not_enough_space {
                 display:none;
