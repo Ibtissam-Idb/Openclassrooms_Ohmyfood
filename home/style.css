@@ -338,6 +338,27 @@ body {
   height: 100%;
   background-color: #fff;
   border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.restaurant_sticker_bloc {
+  align-self: flex-end;
+  position: relative;
+  width: 0px;
+  height: 0px;
+}
+
+.restaurant_sticker_element {
+  position: absolute;
+  right: 16px;
+  top: 12px;
+  font-size: 12px;
+  background: #99E2D0;
+  color: #4ea36f;
+  border-radius: 2px;
+  padding: 5px 10px;
+  font-weight: 500;
 }
 
 .restaurant_img {
@@ -345,8 +366,8 @@ body {
   max-height: 138px;
   -o-object-fit: cover;
      object-fit: cover;
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 @media (min-width: 992px) {
   .restaurant_img {
@@ -360,8 +381,8 @@ body {
   justify-content: space-between;
   padding: 10px 20px 20px 20px;
   background: #fff;
-  border-bottom-left-radius: 30px;
-  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
   align-items: center;
 }
 @media (min-width: 992px) {
