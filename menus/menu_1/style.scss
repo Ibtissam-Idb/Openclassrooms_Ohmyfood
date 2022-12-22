@@ -91,6 +91,23 @@ body {
     }
 }
 
+.restaurant_title_bloc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.restaurant_title_icon {
+    font-size: 22px;
+    position: relative;
+    right: 3%;
+
+    @media (min-width: 992px) {
+        font-size: 35px;
+        position: static;
+    }
+}
+
 .restaurant_description {
     position: relative;
     bottom: 47px;
@@ -120,10 +137,6 @@ body {
         font-size: 40px;
     }
 }
-
-/*.menu_type {
-    margin-top: 60px;
-}*/
 
 .menu_subtitle {
     margin-bottom: 0px;
@@ -317,7 +330,11 @@ body {
 .footer_list_item {
     list-style: none;
     padding: 0px;
-    margin-bottom: 7px
+    margin-bottom: 7px;
+    
+    @media (min-width: 992px) {
+        font-size: 14px;
+    }
 }
 
 .footer_list_icon {
@@ -325,6 +342,6 @@ body {
     margin-right: 2px;
 
     @media (min-width: 992px) {
-        font-size: 17px;
+        font-size: 12px;
     }
 }

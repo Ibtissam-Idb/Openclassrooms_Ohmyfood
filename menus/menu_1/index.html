@@ -6,9 +6,6 @@
     <meta name="viewport" content="width=device-width">
 
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" media="screen and (min-width:768px) and (max-width:991px)" href="./style_tablet.css">
-    <link rel="stylesheet" media="screen and (min-width:992px)" href="./style_desktop.css">
-    <link rel="icon" href="../maquettes/images/logo/ohmyfood.png">
     <script src="https://kit.fontawesome.com/7f92bd1107.js" crossorigin="anonymous"></script>
 
     <title>Ohmyfood!</title>
@@ -26,11 +23,12 @@
         <article class="restaurant_description flex flex-column">
             <div class="restaurant_title_bloc">
                 <h1>À la francaise</h1>
-                <!-- icone coeur -->
+                <i class="restaurant_title_icon far fa-heart"></i>
+                <!--<i class="restaurant_title_icon--full fas fa-heart"></i>-->
             </div>
             <div class="restaurant_menu">
                 <!-- Menu n°1 -->
-                <div class="menu_type">
+                <div class="menu_type menu_type--first">
                     <h2 class="menu_subtitle">Entrées</h2>
                     <div class="menu_colored_bar"></div>
                     <div class="menu_cards_bloc flex flex-column">
@@ -94,7 +92,7 @@
                 </div>
 
                 <!-- Menu n°2 -->
-                <div class="menu_type">
+                <div class="menu_type menu_type--second">
                     <h2 class="menu_subtitle">Plats</h2>
                     <div class="menu_colored_bar"></div>
                     <div class="menu_cards_bloc flex flex-column">
@@ -154,7 +152,7 @@
                 </div>
 
                 <!-- Menu n°1 -->
-                <div class="menu_type">
+                <div class="menu_type menu_type--third">
                     <h2 class="menu_subtitle">Desserts</h2>
                     <div class="menu_colored_bar"></div>
                     <div class="menu_cards_bloc flex flex-column">
@@ -236,6 +234,4 @@
 </html>
 
 <!-- Commentaires 
-1) Il manque encore l'icone coeur
-2) Améliorer la transition des cartes selon la width disponible
-3) Le design n'est pas responsive sous 768px -->
+1) Il manque encore l'icone coeur -->
