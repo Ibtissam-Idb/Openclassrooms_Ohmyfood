@@ -159,6 +159,12 @@ body {
         color: #fff;
         font-weight: 600;
         box-shadow: 0px 5px 10px $shadow-btn;
+        transition: all 600ms;
+        background-color: $primary;
+        &:hover {
+            background: #d86cdb;
+            box-shadow: 0px 5px 20px $shadow-btn;
+        }
 
         @media (min-width:768px) and (max-width:991px) {
             margin: 0px;

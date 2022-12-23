@@ -159,6 +159,12 @@ body {
   color: #fff;
   font-weight: 600;
   box-shadow: 0px 5px 10px #cdcccc;
+  transition: all 600ms;
+  background-color: #9356DC;
+}
+.btn--gradient:hover {
+  background: #d86cdb;
+  box-shadow: 0px 5px 20px #cdcccc;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .btn--gradient {
