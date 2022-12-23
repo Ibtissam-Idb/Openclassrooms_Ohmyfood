@@ -421,17 +421,42 @@ body {
   }
 }
 
+@-webkit-keyframes fill_heart {
+  0% {
+    -webkit-text-stroke: 2px black;
+    color: #fff;
+  }
+  100% {
+    color: #9356DC;
+    -webkit-text-stroke: 2px #9356DC;
+  }
+}
+
+@keyframes fill_heart {
+  0% {
+    -webkit-text-stroke: 2px black;
+    color: #fff;
+  }
+  100% {
+    color: #9356DC;
+    -webkit-text-stroke: 2px #9356DC;
+  }
+}
 .restaurant_icon {
   -webkit-text-stroke: 2px black;
-  color: transparent;
+  color: #fff;
   font-size: 20px;
-  transition: all 1000ms;
+  transition: all 500ms;
 }
-.restaurant_icon:hover {
-  background: -webkit-linear-gradient(308deg, #FF79DA 0%, #9356DC 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: 0px;
+.restaurant_icon:active {
+  -webkit-animation: 600ms forwards fill_heart;
+          animation: 600ms forwards fill_heart;
+}
+@media (min-width: 992px) {
+  .restaurant_icon:hover {
+    color: #9356DC;
+    -webkit-text-stroke: 2px #9356DC;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {

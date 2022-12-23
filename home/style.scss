@@ -408,17 +408,32 @@ body {
     }
 }
 
+@keyframes fill_heart {
+    0% {
+        -webkit-text-stroke: 2px black;
+        color: #fff;
+    }
+    100% {
+        color: $primary;
+        -webkit-text-stroke: 2px $primary;
+    }
+}
+
 .restaurant_icon {
     -webkit-text-stroke: 2px black;
-    color: transparent;
+    color: #fff;
     font-size: 20px;
-    transition: all 1000ms;
+    transition: all 500ms;
 
-    &:hover {
-        background: -webkit-linear-gradient(308deg, $secondary 0%, $primary 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        -webkit-text-stroke: 0px;
+    &:active {
+        animation: 600ms forwards fill_heart;
+    }
+
+    @media (min-width: 992px) {
+        &:hover {
+            color: $primary;
+            -webkit-text-stroke: 2px $primary;
+        }
     }
 }
 
