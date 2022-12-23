@@ -409,7 +409,17 @@ body {
 }
 
 .restaurant_icon {
+    -webkit-text-stroke: 2px black;
+    color: transparent;
     font-size: 20px;
+    transition: all 1000ms;
+
+    &:hover {
+        background: -webkit-linear-gradient(308deg, $secondary 0%, $primary 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 0px;
+    }
 }
 
 .responsive_wrap {
