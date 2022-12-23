@@ -94,14 +94,21 @@ body {
 }
 
 .restaurant_title_icon {
+  -webkit-text-stroke: 2px black;
+  color: transparent;
   font-size: 22px;
-  position: relative;
-  right: 3%;
+  transition: all 600ms;
+}
+.restaurant_title_icon:hover {
+  color: #9356DC;
+  -webkit-text-stroke: 0px;
 }
 @media (min-width: 992px) {
   .restaurant_title_icon {
     font-size: 35px;
-    position: static;
+  }
+  .restaurant_title_icon:hover {
+    color: #fff;
   }
 }
 
