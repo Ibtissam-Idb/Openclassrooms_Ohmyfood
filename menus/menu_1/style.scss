@@ -138,6 +138,33 @@ body {
     }
 }
 
+@keyframes fadein {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+        top: 0px;
+    }
+}
+
+.menu_type {
+    opacity: 0%;
+    position: relative;
+    top: 20px;
+    animation: 1500ms forwards fadein;
+
+    &--first {
+        animation-delay: 600ms;
+    }
+    &--second {
+        animation-delay: 1000ms;
+    }
+    &--third {
+        animation-delay: 1500ms;
+    }
+}
+
 .menu_subtitle {
     margin-bottom: 0px;
     font-size: 14px;

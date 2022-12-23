@@ -137,6 +137,45 @@ body {
   }
 }
 
+@-webkit-keyframes fadein {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+    top: 0px;
+  }
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+    top: 0px;
+  }
+}
+.menu_type {
+  opacity: 0%;
+  position: relative;
+  top: 20px;
+  -webkit-animation: 1500ms forwards fadein;
+          animation: 1500ms forwards fadein;
+}
+.menu_type--first {
+  -webkit-animation-delay: 600ms;
+          animation-delay: 600ms;
+}
+.menu_type--second {
+  -webkit-animation-delay: 1000ms;
+          animation-delay: 1000ms;
+}
+.menu_type--third {
+  -webkit-animation-delay: 1500ms;
+          animation-delay: 1500ms;
+}
+
 .menu_subtitle {
   margin-bottom: 0px;
   font-size: 14px;
