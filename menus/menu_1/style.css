@@ -93,15 +93,38 @@ body {
   align-items: center;
 }
 
+@-webkit-keyframes fill_heart {
+  0% {
+    -webkit-text-stroke: 2px black;
+    color: transparent;
+  }
+  100% {
+    color: #9356DC;
+    -webkit-text-stroke: 0px;
+  }
+}
+
+@keyframes fill_heart {
+  0% {
+    -webkit-text-stroke: 2px black;
+    color: transparent;
+  }
+  100% {
+    color: #9356DC;
+    -webkit-text-stroke: 0px;
+  }
+}
 .restaurant_title_icon {
   -webkit-text-stroke: 2px black;
   color: transparent;
   font-size: 22px;
   transition: all 600ms;
 }
-.restaurant_title_icon:hover {
-  color: #9356DC;
-  -webkit-text-stroke: 0px;
+@media (max-width: 991px) {
+  .restaurant_title_icon:active {
+    -webkit-animation: 600ms forwards fill_heart;
+            animation: 600ms forwards fill_heart;
+  }
 }
 @media (min-width: 992px) {
   .restaurant_title_icon {
@@ -109,6 +132,7 @@ body {
   }
   .restaurant_title_icon:hover {
     color: #fff;
+    -webkit-text-stroke: #fff;
   }
 }
 
@@ -203,6 +227,13 @@ body {
 }
 
 /* Cartes de restaurant */
+button.menu_card {
+  text-align: start;
+  padding: 0px;
+  font-family: "Roboto", sans-serif;
+  border: none;
+}
+
 .menu_cards_bloc {
   margin-bottom: 30px;
   margin-top: 15px;
@@ -292,9 +323,6 @@ body {
   display: none;
 }
 
-.menu_cards_description:hover .menu_cards_animation {
-  width: 20%;
-}
 .menu_cards_description:hover .cards_animation_icon {
   transform: rotate(360deg);
 }
@@ -303,6 +331,14 @@ body {
 }
 .menu_cards_description:hover .enough_space {
   display: none;
+}
+@media (min-width: 768px) {
+  .menu_cards_description:hover .not_enough_space {
+    display: none;
+  }
+  .menu_cards_description:hover .enough_space {
+    display: block;
+  }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .menu_cards_description:hover .menu_cards_animation {
@@ -314,12 +350,6 @@ body {
   .menu_cards_description:hover .menu_cards_animation {
     width: 12%;
     max-width: 70px;
-  }
-  .menu_cards_description:hover .not_enough_space {
-    display: none;
-  }
-  .menu_cards_description:hover .enough_space {
-    display: block;
   }
 }
 

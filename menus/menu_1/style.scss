@@ -14,9 +14,10 @@ $shadow-btn : #cdcccc;
 
 .flex {
     display: flex;
-        &-column {
-            flex-direction: column;
-        }
+
+    &-column {
+        flex-direction: column;
+    }
 }
 
 body {
@@ -26,10 +27,10 @@ body {
     font-family: Roboto, sans-serif;
 
     @media (min-width: 992px) {
-        font-size : 20px;
-    background: url("../../maquettes/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
-    background-size: cover;
-    background-position: 30%;
+        font-size: 20px;
+        background: url("../../maquettes/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+        background-size: cover;
+        background-position: 30%;
     }
 }
 
@@ -40,9 +41,9 @@ body {
 
     @media (min-width: 992px) {
         justify-content: start;
-    z-index: 0;
-    box-shadow: none;
-    padding: 20px;
+        z-index: 0;
+        box-shadow: none;
+        padding: 20px;
     }
 }
 
@@ -67,7 +68,7 @@ body {
         font-size: 30px;
         position: relative;
         left: 15px;
-        color : #fff;
+        color: #fff;
     }
 }
 
@@ -97,15 +98,28 @@ body {
     align-items: center;
 }
 
+@keyframes fill_heart {
+    0% {
+        -webkit-text-stroke: 2px black;
+        color: transparent;
+    }
+
+    100% {
+        color: $primary;
+        -webkit-text-stroke: 0px;
+    }
+}
+
 .restaurant_title_icon {
     -webkit-text-stroke: 2px black;
     color: transparent;
     font-size: 22px;
     transition: all 600ms;
 
-    &:hover {
-        color: $primary;
-        -webkit-text-stroke: 0px;
+    @media (max-width: 991px) {
+        &:active {
+            animation: 600ms forwards fill_heart;
+        }
     }
 
     @media (min-width: 992px) {
@@ -113,6 +127,7 @@ body {
 
         &:hover {
             color: #fff;
+            -webkit-text-stroke: #fff;
         }
     }
 }
@@ -151,6 +166,7 @@ body {
     0% {
         opacity: 0%;
     }
+
     100% {
         opacity: 100%;
         top: 0px;
@@ -166,9 +182,11 @@ body {
     &--first {
         animation-delay: 600ms;
     }
+
     &--second {
         animation-delay: 1000ms;
     }
+
     &--third {
         animation-delay: 1500ms;
     }
@@ -194,6 +212,13 @@ body {
 
 /* Cartes de restaurant */
 
+button.menu_card {
+    text-align: start;
+    padding: 0px;
+    font-family: "Roboto", sans-serif;
+    border: none;
+}
+
 .menu_cards_bloc {
     margin-bottom: 30px;
     margin-top: 15px;
@@ -211,7 +236,7 @@ body {
 }
 
 .cards_description_text--no_margin {
-    margin:0px;
+    margin: 0px;
 }
 
 .menu_cards_description {
@@ -280,39 +305,44 @@ body {
     display: none;
 }
 
+
 .menu_cards_description:hover {
-        & .menu_cards_animation {
-            width: 20%
-        }
-        & .cards_animation_icon {
-            transform: rotate(360deg);
-        }
-        & .not_enough_space {
-            display: block;
-        }
-        & .enough_space {
+    & .cards_animation_icon {
+        transform: rotate(360deg);
+    }
+
+    & .not_enough_space {
+        display: block;
+    }
+
+    & .enough_space {
+        display: none;
+    }
+
+    @media (min-width: 768px) {
+        .not_enough_space {
             display: none;
         }
+
+        .enough_space {
+            display: block;
+        }
+    }
 
     @media (min-width: 768px) and (max-width: 991px) {
         .menu_cards_animation {
             width: 7%;
             max-width: 50px;
         }
-    } 
+    }
 
     @media (min-width: 992px) {
         .menu_cards_animation {
             width: 12%;
             max-width: 70px;
-            }
-            .not_enough_space {
-                display:none;
-            }
-            .enough_space {
-                display:block;
-            }
-    }    
+        }
+
+    }
 }
 
 /* Boutons Commander */
@@ -330,10 +360,11 @@ body {
     align-self: center;
     transition: all 600ms;
     background-color: $primary;
+
     &:hover {
         background: #d86cdb;
         box-shadow: 0px 5px 20px #cecccc;
-        }
+    }
 }
 
 /* Footer */
@@ -373,7 +404,7 @@ body {
     list-style: none;
     padding: 0px;
     margin-bottom: 7px;
-    
+
     @media (min-width: 992px) {
         font-size: 14px;
     }

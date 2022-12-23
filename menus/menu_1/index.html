@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
 
+    <link rel="stylesheet" href="../../normalize.css">
+
     <link rel="stylesheet" href="./style.css">
     <script src="https://kit.fontawesome.com/7f92bd1107.js" crossorigin="anonymous"></script>
 
@@ -24,7 +26,7 @@
             <div class="restaurant_title_bloc">
                 <h1>À la francaise</h1>
                 <div class="restaurant_title_icons">
-                <i class="restaurant_title_icon fas fa-heart"></i>
+                    <i class="restaurant_title_icon fas fa-heart"></i>
                 </div>
             </div>
             <div class="restaurant_menu">
@@ -34,7 +36,7 @@
                     <div class="menu_colored_bar"></div>
                     <div class="menu_cards_bloc flex flex-column">
                         <!-- Entrée n°1-->
-                        <div class="menu_card flex">
+                        <button class="menu_card flex">
                             <div class="menu_cards_description flex">
                                 <div class="menu_cards_description flex menu_cards_description--width">
                                     <div class="cards_description_text flex flex-column">
@@ -51,14 +53,15 @@
                                     <i class="cards_animation_icon fas fa-check-circle"></i>
                                 </div>
                             </div>
-                        </div>
+                        </button>
                         <!-- Entrée n°2-->
-                        <div class="menu_card flex">
+                        <button class="menu_card flex">
                             <div class="menu_cards_description flex">
                                 <div class="menu_cards_description flex menu_cards_description--width">
                                     <div class="cards_description_text flex flex-column">
                                         <h3 class="flex menu_cards_title cards_description_text--no_margin">Velouté de
-                                            légumes d'an<span class="enough_space">tan</span><span class="not_enough_space">...</span></h3>
+                                            légumes d'an<span class="enough_space">tan</span><span
+                                                class="not_enough_space">...</span></h3>
                                         <h4 class="menu_cards_subtitle cards_description_text--no_margin">Carotte,
                                             panais, topinambour</h4>
                                     </div>
@@ -70,9 +73,9 @@
                                     <i class="cards_animation_icon fas fa-check-circle"></i>
                                 </div>
                             </div>
-                        </div>
+                        </button>
                         <!-- Entrée n°3-->
-                        <div class="menu_card flex">
+                        <button class="menu_card flex">
                             <div class="menu_cards_description flex">
                                 <div class="menu_cards_description flex menu_cards_description--width">
                                     <div class="cards_description_text flex flex-column">
@@ -88,7 +91,7 @@
                                     <i class="cards_animation_icon fas fa-check-circle"></i>
                                 </div>
                             </div>
-                        </div>
+                        </button>
                     </div>
                 </div>
 
@@ -98,12 +101,15 @@
                     <div class="menu_colored_bar"></div>
                     <div class="menu_cards_bloc flex flex-column">
                         <!-- Plat n°1-->
-                        <div class="menu_card flex">
+                        <button class="menu_card flex">
                             <div class="menu_cards_description flex">
                                 <div class="menu_cards_description flex menu_cards_description--width">
                                     <div class="cards_description_text flex flex-column">
-                                        <h3 class="menu_cards_title cards_description_text--no_margin">Coquilles Saint-Jacques</h3>
-                                        <h4 class="flex menu_cards_subtitle cards_description_text--no_margin">Accompagnées d'une purée d<span class="enough_space">e panais</span><span class="not_enough_space">...</span></h4>
+                                        <h3 class="menu_cards_title cards_description_text--no_margin">Coquilles
+                                            Saint-Jacques</h3>
+                                        <h4 class="flex menu_cards_subtitle cards_description_text--no_margin">
+                                            Accompagnées d'une purée d<span class="enough_space">e panais</span><span
+                                                class="not_enough_space">...</span></h4>
                                     </div>
                                     <div class="cards_description_price flex">
                                         <p class="cards_description_text--no_margin">40€</p>
@@ -113,14 +119,17 @@
                                     <i class="cards_animation_icon fas fa-check-circle"></i>
                                 </div>
                             </div>
-                        </div>
+                        </button>
                         <!-- Plat n°2-->
-                        <div class="menu_card flex">
+                        <button class="menu_card flex">
                             <div class="menu_cards_description flex">
                                 <div class="menu_cards_description flex menu_cards_description--width">
                                     <div class="cards_description_text flex flex-column">
-                                        <h3 class="menu_cards_title cards_description_text--no_margin">Magret de canard</h3>
-                                        <h4 class="flex menu_cards_subtitle cards_description_text--no_margin">Et parmentier de pommes de t<span class="enough_space">erre</span><span class="not_enough_space">...</span></h4>
+                                        <h3 class="menu_cards_title cards_description_text--no_margin">Magret de canard
+                                        </h3>
+                                        <h4 class="flex menu_cards_subtitle cards_description_text--no_margin">Et
+                                            parmentier de pommes de t<span class="enough_space">erre</span><span
+                                                class="not_enough_space">...</span></h4>
                                     </div>
                                     <div class="cards_description_price flex">
                                         <p class="cards_description_text--no_margin">35€</p>
@@ -130,15 +139,19 @@
                                     <i class="cards_animation_icon fas fa-check-circle"></i>
                                 </div>
                             </div>
-                        </div>
+                        </button>
                         <!-- Plat n°3-->
-                        <div class="menu_card flex">
+                        <button class="menu_card flex">
                             <div class="menu_cards_description flex">
                                 <div class="menu_cards_description flex menu_cards_description--width">
                                     <div class="cards_description_text flex flex-column">
-                                        <h3 class="flex menu_cards_title cards_description_text--no_margin">Pigeonneau d'Ille-et-Vil<span class="enough_space">aine</span><span class="not_enough_space">...</span>
+                                        <h3 class="flex menu_cards_title cards_description_text--no_margin">Pigeonneau
+                                            d'Ille-et-Vil<span class="enough_space">aine</span><span
+                                                class="not_enough_space">...</span>
                                         </h3>
-                                        <h4 class="flex menu_cards_subtitle cards_description_text--no_margin">Sur son lit de gnocchis aux lé<span class="enough_space">gumes</span><span class="not_enough_space">...</span></h4>
+                                        <h4 class="flex menu_cards_subtitle cards_description_text--no_margin">Sur son
+                                            lit de gnocchis aux lé<span class="enough_space">gumes</span><span
+                                                class="not_enough_space">...</span></h4>
                                     </div>
                                     <div class="cards_description_price flex">
                                         <p class="cards_description_text--no_margin">44€</p>
@@ -148,7 +161,7 @@
                                     <i class="cards_animation_icon fas fa-check-circle"></i>
                                 </div>
                             </div>
-                        </div>
+                        </button>
                     </div>
                 </div>
 
@@ -158,12 +171,14 @@
                     <div class="menu_colored_bar"></div>
                     <div class="menu_cards_bloc flex flex-column">
                         <!-- Dessert n°1-->
-                        <div class="menu_card flex">
+                        <button class="menu_card flex">
                             <div class="menu_cards_description flex">
                                 <div class="menu_cards_description flex menu_cards_description--width">
                                     <div class="cards_description_text flex flex-column">
-                                        <h3 class="menu_cards_title cards_description_text--no_margin">Pétales de violettes glacés</h3>
-                                        <h4 class="menu_cards_subtitle cards_description_text--no_margin">Et purée de noisettes</h4>
+                                        <h3 class="menu_cards_title cards_description_text--no_margin">Pétales de
+                                            violettes glacés</h3>
+                                        <h4 class="menu_cards_subtitle cards_description_text--no_margin">Et purée de
+                                            noisettes</h4>
                                     </div>
                                     <div class="cards_description_price flex">
                                         <p class="cards_description_text--no_margin">18€</p>
@@ -173,13 +188,14 @@
                                     <i class="cards_animation_icon fas fa-check-circle"></i>
                                 </div>
                             </div>
-                        </div>
+                        </button>
                         <!-- Dessert n°2-->
-                        <div class="menu_card flex">
+                        <button class="menu_card flex">
                             <div class="menu_cards_description flex">
                                 <div class="menu_cards_description flex menu_cards_description--width">
                                     <div class="cards_description_text flex flex-column">
-                                        <h3 class="menu_cards_title cards_description_text--no_margin">Fondant au chocolat</h3>
+                                        <h3 class="menu_cards_title cards_description_text--no_margin">Fondant au
+                                            chocolat</h3>
                                         <h4 class="menu_cards_subtitle cards_description_text--no_margin">Revisité</h4>
                                     </div>
                                     <div class="cards_description_price flex">
@@ -190,15 +206,17 @@
                                     <i class="cards_animation_icon fas fa-check-circle"></i>
                                 </div>
                             </div>
-                        </div>
+                        </button>
                         <!-- Entrée n°3-->
-                        <div class="menu_card flex">
+                        <button class="menu_card flex">
                             <div class="menu_cards_description flex">
                                 <div class="menu_cards_description flex menu_cards_description--width">
                                     <div class="cards_description_text flex flex-column">
-                                        <h3 class="menu_cards_title cards_description_text--no_margin">Millefeuille croustillant
+                                        <h3 class="menu_cards_title cards_description_text--no_margin">Millefeuille
+                                            croustillant
                                         </h3>
-                                        <h4 class="menu_cards_subtitle cards_description_text--no_margin">Myrtille et pâte d'amandes</h4>
+                                        <h4 class="menu_cards_subtitle cards_description_text--no_margin">Myrtille et
+                                            pâte d'amandes</h4>
                                     </div>
                                     <div class="cards_description_price flex">
                                         <p class="cards_description_text--no_margin">23€</p>
@@ -208,7 +226,7 @@
                                     <i class="cards_animation_icon fas fa-check-circle"></i>
                                 </div>
                             </div>
-                        </div>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -233,6 +251,3 @@
 </body>
 
 </html>
-
-<!-- Commentaires 
-1) Il manque encore l'icone coeur -->
