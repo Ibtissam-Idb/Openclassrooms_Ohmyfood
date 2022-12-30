@@ -1,0 +1,568 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Shrikhand&display=swap');
+
+$primary : #9356DC;
+$secondary : #FF79DA;
+$tertiary : #99E2D0;
+$tint-light : #f7f7f7;
+$tint-middle : #eaeaea;
+$tint-dark: #4c4b4b;
+$shadow-btn : #cdcccc;
+
+* {
+    box-sizing: border-box;
+}
+
+.flex {
+    display: flex;
+
+    &-column {
+        flex-direction: column;
+    }
+}
+
+body {
+    font-size: 15px;
+    width: 100%;
+    margin: 0;
+    font-family: Roboto, sans-serif;
+}
+
+/* Loader */
+
+@keyframes fadeout {
+    0% {
+        opacity: 50%;
+        width: 100%;
+        height: 100%
+    }
+    100% {
+        opacity: 0%;
+        width: 0%;
+        height: 0%;
+    }
+    
+}
+
+.loader_bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    opacity: 50%;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    animation: fadeout forwards;
+    animation-delay: 2800ms;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loader {
+    z-index: 1001;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 6px solid transparent;
+    border-right: 6px solid #fff;
+    animation: 1300ms linear infinite spin;
+    animation-duration: 1300ms;
+}
+
+/* Header */
+
+.header {
+    justify-content: center;
+    padding: 27px 0px 13px 0px;
+    box-shadow: 0px 5px 10px #c7c5c5;
+    z-index: 100;
+
+    @media (min-width:992px) {
+        justify-content: start;
+        z-index: 0;
+        box-shadow: none;
+        padding: 20px;
+    }
+}
+
+.header_img {
+    width: 48%;
+    max-width: 150px;
+
+    @media (min-width:992px) {
+        width: 200px;
+    }
+}
+
+/* Localisation */
+
+.localisation {
+    justify-content: center;
+    column-gap: 15px;
+    background: $tint-middle;
+    padding: 15px;
+    color: $tint-dark;
+
+    @media (min-width:992px) {
+        background: #fff;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        padding: 0px;
+    }
+}
+
+.localisation_icon {
+    right: 30px;
+    top: 3px;
+
+    @media (min-width:992px) {
+        top: 0px;
+        right: 10px;
+    }
+}
+
+.localisation_text {
+    margin: 0;
+}
+
+.text {
+    font-weight: 500;
+}
+
+.heading {
+    justify-content: center;
+    text-align: center;
+    padding: 37px 0px 76px 0px;
+    background: $tint-light;
+    align-items: center;
+
+    @media (min-width:768px) and (max-width:991px) {
+        padding-left: 90px;
+        text-align: start;
+        align-items: flex-start;
+    }
+
+    @media (min-width:992px) {
+        background: #fff;
+        padding: 100px 70px 150px 70px;
+        align-items: flex-start;
+        text-align: start;
+    }
+}
+
+.title {
+    line-height: 26px;
+    margin: 0px;
+    font-size: 20px;
+}
+
+.title.heading_title {
+    margin-top: 20px;
+    width: 196px;
+
+    @media (min-width:768px) and (max-width:991px) {
+        margin-bottom: 0px;
+        width: 490px;
+        padding: 0px;
+    }
+
+    @media (min-width: 992px) {
+        font-size: 40px;
+        line-height: 20px;
+        margin-bottom: 0px;
+        padding: 0px;
+        width: 840px;
+    }
+}
+
+.heading_subtitle {
+    font-size: 14px;
+    font-weight: 300;
+    width: 290px;
+
+    @media (min-width:768px) and (max-width:991px) {
+        width: 650px;
+    }
+
+    @media (min-width: 992px) {
+        width: 650px;
+        font-size: 21px;
+    }
+}
+
+.btn {
+    font-size: 12px;
+    border: none;
+
+    &--gradient {
+        margin-top: 20px;
+        padding: 14px;
+        border-radius: 50px;
+        background: linear-gradient(176deg, $secondary 0%, $primary 100%);
+        color: #fff;
+        font-weight: 600;
+        box-shadow: 0px 5px 10px $shadow-btn;
+        transition: all 600ms;
+        background-color: $primary;
+        &:hover {
+            background: #d86cdb;
+            box-shadow: 0px 5px 20px $shadow-btn;
+        }
+
+        @media (min-width:768px) and (max-width:991px) {
+            margin: 0px;
+        }
+
+        @media (min-width: 992px) {
+            margin-right: 0px;
+            margin-left: 0px;
+            font-size: 15px;
+            padding: 10px 20px;
+        }
+    }
+
+    &--light-background {
+        background-color: $tint-light;
+        padding: 22px 0px;
+        border-radius: 16px;
+        box-shadow: 0px 5px 20px $shadow-btn;
+
+        @media (min-width: 992px) {
+            background: #fff;
+        }
+    }
+}
+
+.p-40 {
+    padding: 40px;
+}
+
+.relative {
+    position: relative;
+}
+
+.functionning_title {
+    margin-top: 50px;
+    margin-left: 7%;
+
+    @media (min-width: 992px) {
+        margin-left: 40px;
+    }
+}
+
+@media (min-width: 992px) {
+    .functionning {
+        padding-bottom: 35px;
+        background-color: $tint-light;
+    }
+
+    .title--desktop {
+        font-size: 40px;
+        font-weight: 300;
+    }
+
+    .functionning_button_icon {
+        top: 0px;
+    }
+}
+
+.functionning_buttons_bloc {
+    row-gap: 45px;
+    margin-top: 40px;
+    align-items: center;
+
+    @media (min-width:992px) {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}
+
+.functionning_button_icon {
+    top: 5px;
+    color: $tint-dark;
+}
+
+.functionning_buttons_element {
+    justify-content: center;
+    margin: 0px 7%;
+    width: 85%;
+    max-width: 297px;
+
+    @media (min-width:992px) {
+        font-size: 18px;
+        width: 33%;
+        padding: 21px 0px;
+        position: relative;
+        margin: 0px;
+    }
+
+    :hover .functionning_button_icon {
+        color: $primary;
+    }
+}
+
+.functionning_buttons_container {
+    justify-content: space-evenly;
+    width: 100%;
+    left: -11%;
+
+    @media (min-width: 992px) {
+        column-gap: 28px;
+        padding-left: 0;
+        align-items: center;
+        left: -6%;
+    }
+}
+
+.functionning_button_number {
+    font-size: 10px;
+    color: #fff;
+    background: $primary;
+    padding: 4px 6px;
+    border-radius: 12px;
+    bottom: 2px;
+    right: 2%;
+
+    @media (min-width:992px) {
+        padding: 3px 6px;
+        font-size: 14px;
+        width: 7%;
+        left: 6px;
+    }
+}
+
+.functionning .no-margin {
+    margin: 0px;
+}
+
+/* Restaurants */
+
+.restaurants {
+    padding: 40px 7% 80px 7%;
+    background: $tint-light;
+    margin-top: 90px;
+
+    @media (min-width: 992px) {
+        padding: 40px 40px 150px 40px;
+        background: $tint-light;
+        margin: 0px;
+    }
+}
+
+.restaurants--shadow {
+    box-shadow: 0px 5px 10px $shadow-btn;
+}
+
+.restaurants_bloc {
+    row-gap: 40px;
+    margin-top: 40px;
+    align-items: center;
+
+    @media (min-width: 768px) and (max-width: 991px) {
+        column-gap: 60px;
+        row-gap: 60px;
+    }
+
+    @media (min-width: 992px) {
+        margin-top: 40px;
+        flex-wrap: wrap;
+        row-gap: 41px;
+        justify-content: center;
+        column-gap: 58px;
+    }
+}
+
+.restaurants_element {
+    margin: 0;
+    width: 95%;
+    max-width: 297px;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: 992px) {
+        max-width: 347px;
+    }
+}
+
+.restaurant_sticker_bloc {
+    align-self: flex-end;
+    position: relative;
+    width: 0px;
+    height: 0px;
+}
+
+.restaurant_sticker_element {
+    position: absolute;
+    right: 16px;
+    top: 12px;
+    font-size: 12px;
+    background: $tertiary;
+    color:#4ea36f;
+    border-radius: 2px;
+    padding: 5px 10px;
+    font-weight: 500;
+
+    @media (min-width: 992px) {
+        font-size: 16px;
+    }
+}
+
+.restaurant_img {
+    width: 100%;
+    max-height: 138px;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+
+    @media (min-width: 992px) {
+        object-position: 40%;
+        height: 100%;
+        max-height: 174px;
+    }
+}
+
+.restaurant_figcaption {
+    justify-content: space-between;
+    padding: 10px 20px 20px 20px;
+    background: #fff;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    align-items: center;
+
+    @media (min-width: 992px) {
+        width: 100%;
+        align-items: center;
+        box-shadow: none;
+        border-top-right-radius: 30px;
+    }
+}
+
+.restaurants h2 {
+    margin: 0;
+    font-size: 16px;
+
+    @media (min-width: 992px) {
+        font-size: 21px;
+    }
+}
+
+.restaurants h3 {
+    margin: 0;
+    font-size: 15px;
+    font-weight: 300;
+
+    @media (min-width: 992px) {
+        font-size: 18px;
+    }
+}
+
+@keyframes fill_heart {
+    0% {
+        -webkit-text-stroke: 2px black;
+        color: #fff;
+    }
+    100% {
+        color: $primary;
+        -webkit-text-stroke: 2px $primary;
+    }
+}
+
+.restaurant_icon {
+    -webkit-text-stroke: 2px black;
+    color: #fff;
+    font-size: 20px;
+    transition: all 500ms;
+
+    &:active {
+        animation: 600ms forwards fill_heart;
+    }
+
+    @media (min-width: 992px) {
+        font-size: 26px;
+        &:hover {
+            color: $primary;
+            -webkit-text-stroke: 2px $primary;
+        }
+    }
+}
+
+.responsive_wrap {
+    @media (min-width: 768px) and (max-width: 991px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    @media (min-width: 992px) {
+        flex-direction: row;
+        max-width: 992px;
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+/* Footer */
+
+.footer {
+    background: $tint-dark;
+    color: #fff;
+    padding: 50px 7% 30px;
+
+    @media (min-width: 992px) {
+        padding: 40px;
+    }
+}
+
+.footer_img {
+    filter: invert(1);
+    width: 50%;
+    max-width: 142px;
+
+    @media (min-width: 992px) {
+        width: 190px;
+    }
+}
+
+.footer_list {
+    list-style: none;
+    padding: 0px;
+
+    @media (min-width: 992px) {
+        column-gap: 34px;
+        display: flex;
+        justify-content: flex-start;
+    }
+}
+
+.footer_list_item {
+    list-style: none;
+    padding: 0px;
+    margin-bottom: 7px
+}
+
+.footer_list_icon {
+    margin-right: 2px;
+    font-size: 13px;
+
+    @media (min-width: 992px) {
+        font-size: 17px;
+    }
+}
