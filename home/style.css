@@ -415,7 +415,7 @@ body {
 
 .restaurants_element {
   margin: 0;
-  width: 95%;
+  width: 100%;
   max-width: 297px;
   height: 100%;
   background-color: #fff;
@@ -427,6 +427,13 @@ body {
   .restaurants_element {
     max-width: 347px;
   }
+}
+
+a.restaurants_element {
+  text-decoration: none;
+  color: black;
+  overflow: hidden;
+  border-radius: 15px;
 }
 
 .restaurant_sticker_bloc {
