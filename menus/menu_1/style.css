@@ -323,31 +323,34 @@ button.menu_card {
   display: none;
 }
 
-.menu_cards_description:hover .cards_animation_icon {
+.menu_card:active .cards_animation_icon, .menu_card:hover .cards_animation_icon {
   transform: rotate(360deg);
 }
-.menu_cards_description:hover .not_enough_space {
-  display: block;
-}
-.menu_cards_description:hover .enough_space {
-  display: none;
-}
-@media (min-width: 768px) {
-  .menu_cards_description:hover .not_enough_space {
-    display: none;
-  }
-  .menu_cards_description:hover .enough_space {
-    display: block;
-  }
+.menu_card:active .menu_cards_animation {
+  width: 15%;
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  .menu_cards_description:hover .menu_cards_animation {
+  .menu_card:active .menu_cards_animation {
     width: 7%;
     max-width: 50px;
   }
 }
+.menu_card:active .not_enough_space {
+  display: block;
+}
+.menu_card:active .enough_space {
+  display: none;
+}
+@media (min-width: 340px) {
+  .menu_card:active .not_enough_space {
+    display: none;
+  }
+  .menu_card:active .enough_space {
+    display: block;
+  }
+}
 @media (min-width: 992px) {
-  .menu_cards_description:hover .menu_cards_animation {
+  .menu_card:hover .menu_cards_animation {
     width: 12%;
     max-width: 70px;
   }

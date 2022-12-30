@@ -305,43 +305,52 @@ button.menu_card {
     display: none;
 }
 
+.menu_card {
 
-.menu_cards_description:hover {
-    & .cards_animation_icon {
-        transform: rotate(360deg);
+    &:active,
+    &:hover {
+        .cards_animation_icon {
+            transform: rotate(360deg);
+        }
     }
 
-    & .not_enough_space {
-        display: block;
-    }
+    &:active {
+        .menu_cards_animation {
+            width: 15%;
 
-    & .enough_space {
-        display: none;
-    }
+            @media (min-width: 768px) and (max-width: 991px) {
+                width: 7%;
+                max-width: 50px;
+            }
+        }
 
-    @media (min-width: 768px) {
         .not_enough_space {
-            display: none;
+            display: block;
         }
 
         .enough_space {
-            display: block;
+            display: none;
         }
-    }
 
-    @media (min-width: 768px) and (max-width: 991px) {
-        .menu_cards_animation {
-            width: 7%;
-            max-width: 50px;
+
+        @media (min-width: 340px) {
+            .not_enough_space {
+                display: none;
+            }
+
+            .enough_space {
+                display: block;
+            }
         }
     }
 
     @media (min-width: 992px) {
-        .menu_cards_animation {
-            width: 12%;
-            max-width: 70px;
+        &:hover {
+            .menu_cards_animation {
+                width: 12%;
+                max-width: 70px;
+            }
         }
-
     }
 }
 
