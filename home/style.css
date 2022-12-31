@@ -275,6 +275,10 @@ body {
   position: relative;
 }
 
+.section_title--25px {
+  font-size: 25px;
+}
+
 .functionning_title {
   margin-top: 50px;
   margin-left: 7%;
