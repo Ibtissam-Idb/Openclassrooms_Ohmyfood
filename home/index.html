@@ -21,19 +21,19 @@
     <header class="header flex">
         <img class="header_img" src="../maquettes/images/logo/ohmyfood.png" alt="Logo Ohmyfood!">
     </header>
-
-    <aside class="localisation flex">
+<main>
+    <section class="localisation flex">
         <i class="localisation_icon fas fa-map-marker-alt"></i>
         <p class="localisation_text text">Paris, Belleville</p>
-    </aside>
+    </section>
 
-    <article class="heading flex flex-column">
+    <section class="heading flex flex-column">
         <h1 class="heading_title title">Réservez le menu qui vous convient</h1>
         <h2 class="heading_subtitle">Découvrez des restaurants d'exception, sélectionnés par nos soins.</h2>
         <button class="btn btn--gradient">Explorer nos restaurants</button>
-    </article>
+    </section>
 
-    <article class="functionning flex flex-column">
+    <section class="functionning flex flex-column">
         <h1 class="functionning_title section_title--25px title--desktop">Fonctionnement</h1>
         <div class="functionning_buttons_bloc responsive_wrap flex flex-column">
             <div class="functionning_buttons_element btn btn--light-background flex">
@@ -58,23 +58,63 @@
                 </div>
             </div>
         </div>
-    </article>
+    </section>
 
-    <article class="restaurants flex flex-column">
+    <section class="restaurants flex flex-column">
         <h1 class="restaurants_title section_title--25px title--desktop">Restaurants</h1>
+        <!-- Carte n°1 -->
         <div class="restaurants_bloc responsive_wrap flex flex-column">
-            <a href="../menus/menu_1/index.html" class="restaurants_element restaurants--shadow">
+            <a href="../menus/la_palette_du_gout/index.html" class="restaurants_element restaurants--shadow">
+                <figure class="restaurants_element restaurants--shadow">
+                    <div class="restaurant_sticker_bloc">
+                        <div class="restaurant_sticker_element">Nouveau</div>
+                    </div>
+                    <div>
+                    <img class="restaurant_img"
+                        src="../maquettes/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+                        alt="Restaurant La Palette du Goût, Ménilmontant">
+                        </div>
+                    <figcaption class="restaurant_figcaption flex restaurants--shadow">
+                        <div class="restaurant_subtitles">
+                            <h2>La palette du goût</h2>
+                            <h3>Ménilmontant</h3>
+                        </div>
+                        <i class="restaurant_icon fas fa-heart"></i>
+                    </figcaption>
+                </figure>
+            </a>
+            <!-- Carte n°2 -->
+            <a href="../menus/la_note_enchantee/index.html" class="restaurants_element restaurants--shadow">
+                <figure class="restaurants_element restaurants--shadow">
+                    <div class="restaurant_sticker_bloc">
+                        <div class="restaurant_sticker_element">Nouveau</div>
+                    </div>
+                    <div>
+                    <img class="restaurant_img" src="../maquettes/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
+                        alt="Restaurant La Note Enchantée, Charonne">
+                    </div>
+                    <figcaption class="restaurant_figcaption flex restaurants--shadow">
+                        <div class="restaurant_subtitles">
+                            <h2>La note enchantée</h2>
+                            <h3>Charonne</h3>
+                        </div>
+                        <i class="restaurant_icon fas fa-heart"></i>
+                    </figcaption>
+                </figure>
+            </a>
+            <a href="../menus/a_la_francaise/index.html" class="restaurants_element restaurants--shadow">
             <figure class="restaurants_element restaurants--shadow">
                 <div class="restaurant_sticker_bloc">
                     <div class="restaurant_sticker_element">Nouveau</div>
                 </div>
-                <img class="restaurant_img"
-                    src="../maquettes/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
-                    alt="Restaurant La Palette du Goût, Ménilmontant">
+                <div>
+                <img class="restaurant_img" src="../maquettes/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+                    alt="Restaurant À la Francaise, Cité rouge">
+                    </div>
                 <figcaption class="restaurant_figcaption flex restaurants--shadow">
                     <div class="restaurant_subtitles">
-                        <h2>La palette du goût</h2>
-                        <h3>Ménilmontant</h3>
+                        <h2>À la francaise</h2>
+                        <h3>Cité rouge</h3>
                     </div>
                     <i class="restaurant_icon fas fa-heart"></i>
                 </figcaption>
@@ -84,37 +124,11 @@
                 <div class="restaurant_sticker_bloc">
                     <div class="restaurant_sticker_element">Nouveau</div>
                 </div>
-                <img class="restaurant_img" src="../maquettes/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
-                    alt="Restaurant La Note Enchantée, Charonne">
-                <figcaption class="restaurant_figcaption flex restaurants--shadow">
-                    <div class="restaurant_subtitles">
-                        <h2>La note enchantée</h2>
-                        <h3>Charonne</h3>
-                    </div>
-                    <i class="restaurant_icon fas fa-heart"></i>
-                </figcaption>
-            </figure>
-            <figure class="restaurants_element restaurants--shadow">
-                <div class="restaurant_sticker_bloc">
-                    <div class="restaurant_sticker_element">Nouveau</div>
-                </div>
-                <img class="restaurant_img" src="../maquettes/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
-                    alt="Restaurant À la Francaise, Cité rouge">
-                <figcaption class="restaurant_figcaption flex restaurants--shadow">
-                    <div class="restaurant_subtitles">
-                        <h2>À la francaise</h2>
-                        <h3>Cité rouge</h3>
-                    </div>
-                    <i class="restaurant_icon fas fa-heart"></i>
-                </figcaption>
-            </figure>
-            <figure class="restaurants_element restaurants--shadow">
-                <div class="restaurant_sticker_bloc">
-                    <div class="restaurant_sticker_element">Nouveau</div>
-                </div>
+                <div>
                 <img class="restaurant_img"
                     src="../maquettes/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
                     alt="Restaurant Le Délice des sens, Folie-Méricourt">
+                    </div>
                 <figcaption class="restaurant_figcaption flex restaurants--shadow">
                     <div class="restaurant_subtitles">
                         <h2>Le Délice des sens</h2>
@@ -124,7 +138,8 @@
                 </figcaption>
             </figure>
         </div>
-    </article>
+    </section>
+</main>
 
     <footer class="footer">
         <img class="footer_img" src="../maquettes/images/logo/ohmyfood.png" alt="Logo Ohmyfood!">

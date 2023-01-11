@@ -76,7 +76,8 @@ body {
     height: 120px;
     border-radius: 50%;
     border: 6px solid transparent;
-    border-right: 6px solid #fff;
+    border-right: 6px solid $primary;
+    border-left: 6px solid #fff;
     animation: 1300ms linear infinite spin;
     animation-duration: 1300ms;
 }
@@ -149,17 +150,9 @@ body {
     background: $tint-light;
     align-items: center;
 
-    @media (min-width:768px) and (max-width:991px) {
-        padding-left: 90px;
-        text-align: start;
-        align-items: flex-start;
-    }
-
     @media (min-width:992px) {
         background: #fff;
         padding: 100px 70px 150px 70px;
-        align-items: flex-start;
-        text-align: start;
     }
 }
 
@@ -538,7 +531,10 @@ a.restaurants_element {
     padding: 50px 7% 30px;
 
     @media (min-width: 992px) {
-        padding: 40px;
+        font-size: 20px;
+        padding: 40px 40px 20px 40px;
+        display: flex;
+        flex-direction: column;
     }
 }
 
@@ -549,6 +545,7 @@ a.restaurants_element {
 
     @media (min-width: 992px) {
         width: 190px;
+        align-self: center;
     }
 }
 
@@ -557,9 +554,9 @@ a.restaurants_element {
     padding: 0px;
 
     @media (min-width: 992px) {
-        column-gap: 34px;
         display: flex;
-        justify-content: flex-start;
+        justify-content: center;
+        column-gap: 20px;
     }
 }
 

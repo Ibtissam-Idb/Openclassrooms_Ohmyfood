@@ -19,7 +19,6 @@ body {
 @media (min-width: 992px) {
   body {
     font-size: 20px;
-    background: url("../../maquettes/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
     background-size: cover;
     background-position: 30%;
   }
@@ -48,7 +47,6 @@ body {
     width: 200px;
     position: relative;
     left: 50px;
-    filter: invert(1);
   }
 }
 
@@ -62,7 +60,7 @@ body {
     font-size: 30px;
     position: relative;
     left: 15px;
-    color: #fff;
+    color: #000000;
   }
 }
 
@@ -72,18 +70,24 @@ body {
 }
 @media (min-width: 992px) {
   .restaurant {
+    background-color: #cdcdcd;
+    align-items: center;
     display: flex;
     justify-content: center;
-    background-color: transparent;
+    flex-direction: column;
   }
 }
 
 .restaurant_img {
   width: 100%;
+  max-height: 210px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .restaurant_img {
-    display: none;
+    width: 100%;
+    height: 150px;
   }
 }
 
@@ -132,7 +136,8 @@ body {
   }
   .restaurant_title_icon:hover {
     color: #fff;
-    -webkit-text-stroke: #fff;
+    -webkit-animation: 600ms forwards fill_heart;
+            animation: 600ms forwards fill_heart;
   }
 }
 
@@ -335,18 +340,16 @@ button.menu_card {
     max-width: 50px;
   }
 }
-.menu_card:active .not_enough_space {
-  display: block;
-}
-.menu_card:active .enough_space {
-  display: none;
-}
-@media (min-width: 340px) {
+@media (max-width: 350px) {
+  .menu_card:active h3, .menu_card:active h4 {
+    display: flex;
+    flex-direction: row;
+  }
   .menu_card:active .not_enough_space {
-    display: none;
+    display: block;
   }
   .menu_card:active .enough_space {
-    display: block;
+    display: none;
   }
 }
 @media (min-width: 992px) {
@@ -384,7 +387,10 @@ button.menu_card {
 }
 @media (min-width: 992px) {
   .footer {
-    padding: 40px;
+    font-size: 15px;
+    padding: 40px 40px 20px 40px;
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -396,6 +402,7 @@ button.menu_card {
 @media (min-width: 992px) {
   .footer_img {
     width: 190px;
+    align-self: center;
   }
 }
 
@@ -405,17 +412,14 @@ button.menu_card {
 }
 @media (min-width: 992px) {
   .footer_list {
-    -moz-column-gap: 34px;
-         column-gap: 34px;
     display: flex;
-    justify-content: flex-start;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    justify-content: center;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
   }
 }
 
 .footer_list_item {
-  font-size: 15px;
   list-style: none;
   padding: 0px;
   margin-bottom: 7px;
