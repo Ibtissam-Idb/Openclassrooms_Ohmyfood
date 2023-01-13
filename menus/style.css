@@ -327,6 +327,17 @@ button.menu_card {
 .not_enough_space {
   display: none;
 }
+@media (max-width: 300px) {
+  .not_enough_space--under_300px {
+    display: block;
+  }
+}
+
+@media (max-width: 300px) {
+  .enough_space--under_300px {
+    display: none;
+  }
+}
 
 .menu_card:active .cards_animation_icon, .menu_card:hover .cards_animation_icon {
   transform: rotate(360deg);

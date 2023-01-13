@@ -308,6 +308,18 @@ button.menu_card {
 
 .not_enough_space {
     display: none;
+
+    &--under_300px {
+        @media (max-width: 300px) {
+        display:block;
+        }
+    }
+}
+
+.enough_space--under_300px {
+    @media (max-width: 300px) {
+        display: none;
+    }
 }
 
 .menu_card {
