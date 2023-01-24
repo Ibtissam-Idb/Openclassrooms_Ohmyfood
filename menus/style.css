@@ -253,6 +253,10 @@ button.menu_card {
 
 .cards_description_text {
   justify-content: center;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .cards_description_text--no_margin {
@@ -267,6 +271,7 @@ button.menu_card {
 }
 
 .menu_cards_title {
+  flex-wrap: nowrap;
   font-size: 14px;
 }
 @media (min-width: 992px) {
@@ -300,6 +305,14 @@ button.menu_card {
   padding: 11px 7px;
 }
 
+/* Ellipsis effect */
+.menu_cards_title, .menu_cards_subtitle {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 /* Animation des cartes au hover */
 .menu_cards_animation {
   width: 0%;
@@ -324,21 +337,6 @@ button.menu_card {
   }
 }
 
-.not_enough_space {
-  display: none;
-}
-@media (max-width: 300px) {
-  .not_enough_space--under_300px {
-    display: block;
-  }
-}
-
-@media (max-width: 300px) {
-  .enough_space--under_300px {
-    display: none;
-  }
-}
-
 .menu_card:active .cards_animation_icon, .menu_card:hover .cards_animation_icon {
   transform: rotate(360deg);
 }
@@ -351,25 +349,13 @@ button.menu_card {
     max-width: 50px;
   }
 }
-@media (max-width: 350px) {
-  .menu_card:active h3, .menu_card:active h4 {
-    display: flex;
-    flex-direction: row;
-  }
-  .menu_card:active .not_enough_space {
-    display: block;
-  }
-  .menu_card:active .enough_space {
-    display: none;
-  }
-}
+
 @media (min-width: 992px) {
-  .menu_card:hover .menu_cards_animation {
+  :hover .menu_cards_animation {
     width: 12%;
     max-width: 70px;
   }
 }
-
 /* Boutons Commander */
 .btn--gradient {
   padding: 14px;
