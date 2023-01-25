@@ -306,7 +306,8 @@ button.menu_card {
 }
 
 /* Ellipsis effect */
-.menu_cards_title, .menu_cards_subtitle {
+.menu_cards_title,
+.menu_cards_subtitle {
   display: block;
   white-space: nowrap;
   overflow: hidden;
@@ -340,22 +341,22 @@ button.menu_card {
 .menu_card:active .cards_animation_icon, .menu_card:hover .cards_animation_icon {
   transform: rotate(360deg);
 }
-.menu_card:active .menu_cards_animation {
+.menu_card:active .menu_cards_animation, .menu_card:hover .menu_cards_animation {
   width: 15%;
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  .menu_card:active .menu_cards_animation {
+  .menu_card:active .menu_cards_animation, .menu_card:hover .menu_cards_animation {
     width: 7%;
     max-width: 50px;
   }
 }
-
 @media (min-width: 992px) {
-  :hover .menu_cards_animation {
+  .menu_card:active .menu_cards_animation, .menu_card:hover .menu_cards_animation {
     width: 12%;
     max-width: 70px;
   }
 }
+
 /* Boutons Commander */
 .btn--gradient {
   padding: 14px;

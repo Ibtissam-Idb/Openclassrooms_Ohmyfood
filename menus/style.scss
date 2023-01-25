@@ -264,7 +264,7 @@ button.menu_card {
     }
 }
 
-.menu_cards_subtitle {  
+.menu_cards_subtitle {
     font-weight: 300;
     font-size: 12px;
 
@@ -290,7 +290,8 @@ button.menu_card {
 
 /* Ellipsis effect */
 
-.menu_cards_title, .menu_cards_subtitle {
+.menu_cards_title,
+.menu_cards_subtitle {
     display: block;
     white-space: nowrap;
     overflow: hidden;
@@ -329,9 +330,7 @@ button.menu_card {
         .cards_animation_icon {
             transform: rotate(360deg);
         }
-    }
 
-    &:active {
         .menu_cards_animation {
             width: 15%;
 
@@ -339,19 +338,14 @@ button.menu_card {
                 width: 7%;
                 max-width: 50px;
             }
-        }
-    }
-    }
 
-    @media (min-width: 992px) {
-        :hover {
-            .menu_cards_animation {
+            @media (min-width: 992px) {
                 width: 12%;
                 max-width: 70px;
             }
         }
     }
-
+}
 
 /* Boutons Commander */
 
